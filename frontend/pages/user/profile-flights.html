@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../../styles/booking.css" />
+    <link rel="stylesheet" href="../../styles/common/utilities.css" />
+    <link rel="stylesheet" href="../../styles/admin.css" />
+    <link rel="stylesheet" href="../../styles/profile-settings.css" />
+    <title>Flight System</title>
+  </head>
+  <body>
+    <section class="side-bar">
+      <div class="title-element f-big p-top flex-row gap-5">
+        <img src="../../assets/logo.svg" alt class="logo-img" />
+        <div class="logo">Flight<br />Jet</div>
+      </div>
+      <div class="m-top2 flex-col gap2">
+        <div class="card">
+          <a class="white flex-row gap2" href="../user/profile-settings.html">
+            <img src="../../assets/dashboard.svg" alt />
+            <div class="t-center flex-col j-center">Settings</div>
+          </a>
+        </div>
+        <div class="card">
+          <a class="white flex-row gap2" href="../user/profile-flights.html">
+            <img src="../../assets/flight.svg" alt />
+            <div class="t-center flex-col j-center">Flights</div>
+          </a>
+        </div>
+        <div class="card">
+          <a class="white flex-row gap2" href="../../index.html">
+            <img src="../../assets/flight.svg" alt />
+            <div class="t-center flex-col j-center">Home</div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <div class="mg-top-10 mg-left-5 flex-col">
+      <div class="txt-black-40">Confirm Your Flights</div>
+      <section class="section-3 flex-row" id="confirmContainer"></section>
+
+      <div class="mg-top-10">
+        <div class="txt-black-40">Review Your Flights</div>
+        <section class="section-3 flex-row" id="reviewContainer">
+        </section>
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="../../scripts/profileFlights.js"></script>
+  </body>
+</html>

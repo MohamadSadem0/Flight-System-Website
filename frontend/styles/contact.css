@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0; 
+  }
+  
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 80vh;
+    width: 60vw;
+  }
+  
+  .profile {
+    margin-top: 10px;
+    flex-grow: 1; 
+    overflow-y: auto; 
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .chat-bubble {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    max-width: 70%;
+  }
+  
+  .user-bubble {
+    background-color: #dcf8c6;
+    align-self: flex-start;
+  }
+  
+  .admin-bubble {
+    background-color: #ffffff;
+    align-self: flex-end;
+  }
+  
+  .txt-grey-24 {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .input-section {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .input-section input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .input-section button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .input-section button:hover {
+    background-color: #45a049;
+  }
+  

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../../styles/booking.css" />
+    <link rel="stylesheet" href="../../styles/common/utilities.css" />
+    <link rel="stylesheet" href="../../styles/admin.css" />
+    <title>Flight System</title>
+  </head>
+  <body>
+    <div class="scroller">
+      <div class="circle"></div>
+    </div>
+    <nav class="navbar flex-row">
+      <div class="logo flex-row center gap-2">
+        <img src="./../../assets/logo.svg" alt />
+        <div>
+          Flight
+          <div></div>
+          Jet
+        </div>
+      </div>
+      <div class="navlist txt-32"><a href="../../index.html">Home</a></div>
+      <div class="navlist txt-32"><a href="../user/booking.html">Book</a></div>
+      <div class="navlist txt-32">
+        <a href="../user/contact.html">Contact Us</a>
+      </div>
+      <div class="navlist txt-32 profile-btn">
+        <a href="../user/profile-settings.html">profile</a>
+      </div>
+    </nav>
+    <section class="hero">
+      <img
+        id="image-bck"
+        src="./../../assets/./bookig-page/fatTymztMPD9nEvMGrdMpG.jpg"
+        alt
+      />
+      <div class="overlay-content flex-row">
+        <div class="left-details">
+          <div class="txt-36 pd-top-20">Where Pharaohs Meet Modern Marvels</div>
+          <div class="txt-20 pd-top-50">
+            Explore the mystical Pyramids of Giza,
+            <div>sail down the legendary Nile River,</div>
+            <div>and immerse yourself in the grandeur of Luxor’s temples.</div>
+            From the golden sands of the Sahara to bustling bazaars,
+            <div>
+              Egypt invites you on an unforgettable journey through time
+            </div>
+          </div>
+        </div>
+        <div class="right-details">
+          <img
+            id="image-card"
+            src="./../../assets/bookig-page/Egypt6 1.png"
+            alt
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="section-2">
+      <div class="search-box flex-col">
+        <div class="text txt-64">Start Your Search</div>
+        <div class="flex-row gap2 search-options">
+          <div class="flex-row center box-1">
+            <img src="./../../assets/bookig-page/location-icon.svg" alt />
+            <div class="input-search">
+              <input
+                type="text"
+                id="destination"
+                placeholder="Choose Your Destination"
+              />
+            </div>
+          </div>
+          <div class="flex-row center box-2">
+            <img src="./../../assets/bookig-page/calender-icon.svg" alt />
+            <div class="checkIn">
+              <input type="date" placeholder="Check In" id="checkIn" />
+            </div>
+          </div>
+          <div class="box-3 flex-row center">
+            <img src="./../../assets/bookig-page/calender-icon.svg" alt />
+            <div class="checkOut">
+              <input type="date" placeholder="Check Out" id="checkOut" />
+            </div>
+          </div>
+          <div class="box-4 flex-col center j-center">
+            <button id="search">Search</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-3 flex-row" id="container"></section>
+
+    <section class="footer-section">
+      <footer>
+        <div class="footer-container">
+          <p>&copy; 2024 FlightJet. All rights reserved.</p>
+          <a href="#">Contact Us</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <div class="social-icons">
+            <a href="#"
+              ><img src="../../assets/Facebook.svg" alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img src="../../assets/InstaLight.svg" alt="Instagram"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="./../../scripts/booking.js"></script>
+  </body>
+</html>

@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Junge&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+/* .scroller{
+border-left: 20px solid blue;
+      height: 75%;
+      margin-top: 150px;
+      margin-left: 50px;
+      z-index:12 ;
+      position: fixed;
+
+  
+} */
+
+body {
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar {
+  color: white;
+  font-size: 20px;
+  width: 100vw;
+  /* justify-content: end; */
+  padding-top: 30px;
+  /* justify-content: center; */
+  position: absolute;
+  z-index: 12;
+}
+.navbar .logo {
+  padding-left: 0;
+  flex-grow: 1;
+  padding-left: 10px;
+  font-size: 32px;
+}
+.navbar .navlist {
+  flex-grow: 1;
+  align-self: center;
+  font-family: "Junge", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+}
+.navbar .logo div {
+  padding-left: 10px;
+}
+
+.profile-btn {
+  align-self: self-end;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+
+  overflow-y: hidden;
+  position: relative;
+}
+.hero > img {
+  height: 100vh;
+  width: 100%;
+  display: block;
+}
+
+.hero .overlay-content {
+  position: absolute;
+  width: 100vw;
+  top: 35%;
+
+  color: white;
+  font-size: 50px;
+}
+
+.left-details {
+  flex-grow: 0;
+  padding-left: 7%;
+}
+.right-details {
+  height: 525px;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  margin-top: -150px;
+}
+.right-details > img {
+  height: 525px;
+  width: 450px;
+}
+
+.section-2 {
+  margin-left: 48px;
+  margin-right: 48px;
+  margin-top: 77px;
+}
+
+.search-box {
+  height: 360px;
+  width: auto;
+  background-color: #9a9a9a;
+  border-radius: 25px;
+}
+.search-box .text {
+  padding-top: 30px;
+  padding-left: 50px;
+  flex-grow: 1;
+}
+
+.search-box .box-1 {
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  width: 100%;
+}
+.search-box .box-1 .input-search {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.search-box .box-1 .input-search input {
+  width: 100%;
+  background-color: #d9d9d9;
+  border: none;
+}
+.search-box .box-1 .input-search input:focus {
+  outline: none;
+}
+.search-box .box-2 {
+  background-color: #d9d9d9;
+  width: 193px;
+  border-radius: 10px;
+}
+.search-box .box-2 .checkIn input {
+  border: none;
+  background-color: #d9d9d9;
+}
+.search-box .box-3 {
+  background-color: #d9d9d9;
+  width: 193px;
+  border-radius: 10px;
+}
+.search-box .box-3 .checkOut input {
+  border: none;
+  background-color: #d9d9d9;
+}
+.search-box .box-4 {
+  background-color: #d9d9d9;
+  width: 153px;
+  border-radius: 10px;
+}
+.search-box .box-4 button {
+  border: none;
+  background-color: transparent;
+}
+.search-box .box-4 button:hover {
+  cursor: pointer;
+}
+.search-box .search-options {
+  height: 82px;
+  width: 100%;
+  margin-bottom: 61px;
+  padding-left: 50px;
+  padding-right: 50px;
+  gap: 65px;
+}
+
+.section-3 {
+  margin-left: 48px;
+  margin-right: 48px;
+  margin-top: 77px;
+  padding: 40px;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+.section-3 .card {
+  background-color: #d9d9d9;
+  height: 385px;
+  width: 400px;
+  border-radius: 30px;
+}
+
+.card {
+  gap: 50px;
+  justify-content: center;
+  padding-left: 30px;
+}
+.section-3 img {
+  height: 54px;
+  width: 54px;
+}
+.submit-btn button {
+  border: none;
+  color: white;
+  background-color: transparent;
+}
+.submit-btn button:hover {
+  cursor: pointer;
+}
+.submit-btn {
+  height: 40px;
+  width: 120px;
+  background-color: #0073dd;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+.submit-btn-red {
+  height: 40px;
+  width: 120px;
+  color: white;
+  background-color: red;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+
+/* more general styling */
+.txt-32 {
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+}
+.txt-36 {
+  font-size: 36px;
+  font-family: "Roboto", sans-serif;
+}
+.txt-64 {
+  font-size: 64px;
+  font-family: "Roboto", sans-serif;
+}
+.txt-20 {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.pd-top-20 {
+  padding-top: 20px;
+}
+.pd-top-50 {
+  margin-top: 50px;
+}
+.border-10 {
+  border-radius: 10px;
+}
+.fade-out {
+  transition: opacity 0.5s;
+  opacity: 0;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../../styles/common/utilities.css" />
+    <link rel="stylesheet" href="../../styles/admin.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="main flex-row">
+      <section class="side-bar poppins-regular shadow">
+        <div class="title-element f-big p-top flex-row gap-5">
+          <img src="../../assets/logo.svg" alt="" class="logo-img" />
+          <div class="logo">Flight<br />Jet</div>
+        </div>
+        <div class="m-top2 flex-col gap2">
+          <div class="card gap2">
+            <a class="white flex-row gap2" href="../admin/dashboard.html">
+              <img src="../../assets/dashboard.svg" alt="" />
+              <div class="poppins-regular t-center flex-col j-center">
+                Dashboard
+              </div>
+            </a>
+          </div>
+          <div class="card gap2">
+            <a class="white flex-row gap2" href="../admin/flights.html">
+              <img src="../../assets/flight.svg" alt="" />
+              <div class="poppins-regular t-center flex-col j-center">
+                Flights
+              </div>
+            </a>
+          </div>
+          <div class="card gap2">
+            <a class="white flex-row gap2" href="../admin/bookings.html">
+              <img src="../../assets/bookings.svg" alt="" />
+              <div class="poppins-regular t-center flex-col j-center">
+                Bookings
+              </div>
+            </a>
+          </div>
+          <div class="card gap2">
+            <a class="white flex-row gap2" href="../admin/coinRequests.html">
+              <img src="../../assets/financial.svg" alt="" />
+              <div class="poppins-regular t-center flex-col j-center">
+                Financial
+              </div>
+            </a>
+          </div>
+          <div class="card gap2">
+            <a class="white flex-row gap2" href="../admin/feedback.html">
+              <img src="../../assets/feedback.svg" alt="" />
+              <div class="poppins-regular t-center flex-col j-center">
+                Feedback
+              </div>
+            </a>
+          </div>
+          <div class="card gap2">
+            <a class="white flex-row gap2" href="../admin/support.html">
+              <img src="../../assets/support.svg" alt="" />
+              <div class="poppins-regular t-center flex-col j-center">
+                Support
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="content w-100">
+        <nav>
+          <div class="name poppins-regular">Mohammad Ali Alaawar</div>
+        </nav>
+        <h1 class="title">Feedback</h1>
+        <div class="feedback ml-80 mr-80">
+          <div class="container" id="feedbackContainer">
+          </div>
+        </div>
+      </section>
+    </section>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="../../scripts/admin/feedback.js"></script>
+  </body>
+</html>

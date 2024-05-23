@@ -1,0 +1,71 @@
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.container {
+  width: 1000px;
+  height: 500px;
+  background-color: rgba(217, 217, 217, 0.14);
+  border-radius: 10px;
+  display: flex;
+}
+.container .info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.container .info .logo img {
+  width: 140px;
+  height: 140px;
+}
+.container .info .login {
+  margin-top: 50px;
+}
+.container .info .login .loginData label {
+  display: block;
+  margin-bottom: 7px;
+}
+.container .info .login input[type="email"],
+.container .info .login input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+.container .info .login input[type="email"]:focus,
+.container .info .login input[type="password"]:focus {
+  outline: none;
+}
+.container .info .login label:last-of-type {
+  margin-top: 10px;
+}
+.container .info .login .btn-login {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.container .info .login .btn-login button {
+  width: 70%;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 6px 15px;
+  border: none;
+  border-radius: 5px;
+}
+.container .info .login .btn-login button:hover {
+  cursor: pointer;
+}
+.container .image {
+  width: 50%;
+}
+.container .image img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}

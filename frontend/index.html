@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight System</title>
+    <link rel="stylesheet" href="./styles/common/utilities.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="user-header">
+      <div class="logo p-left1">
+        <img src="./assets/logo.svg" alt="" class="logo-img" />
+        <h2>Flight<br />Jet</h2>
+      </div>
+      <nav>
+        <ul class="link-list">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./pages/user/booking.html">Book</a></li>
+          <li><a href="./pages/user/contact.html">Contact</a></li>
+          <li><a href="./pages/user/profile-settings.html">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="info">
+        <h2 class="secondary-text">Soar to new heights</h2>
+        <h1 class="primary-text">With our exclusive<br />flight deals!</h1>
+      </div>
+      <div class="hero-img">
+        <img src="./assets/hero-img.png" alt="" />
+      </div>
+    </section>
+    <section class="search-form flex-row j-center">
+      <div class="search-card">
+        <form action="#" class="search-form j-center">
+          <div class="search-item">
+            <input
+              class="destination"
+              type="text"
+              placeholder="enter your destination"
+            />
+          </div>
+          <div class="search-item">
+            <placeholder for="date">Choose Departure date:</placeholder>
+            <input type="date" class="date-picker" />
+          </div>
+          <div class="search-item">
+            <placeholder for="date">Choose Arrival date:</placeholder>
+            <input type="date" class="date-picker" />
+          </div>
+          <button class="search-btn" type="submit">
+            <img src="./assets/searchicon.svg" alt="" class="icon" />
+          </button>
+        </form>
+      </div>
+    </section>
+    <section class="search-section flex-col">
+      <h2 class="m-top2">
+        Discover endless possibilities in the <br />sky with our flight options
+      </h2>
+      <div class="container-search">
+        <div
+          class="panel active"
+          style="background-image: url('./assets/destinations/beirut.jpg')"
+        >
+          <h2>Beirut, Lebanon</h2>
+        </div>
+        <div
+          class="panel"
+          style="background-image: url('./assets/destinations/italy.jpg')"
+        >
+          <h2>Venice, Italy</h2>
+        </div>
+        <div
+          class="panel"
+          style="background-image: url('./assets/destinations/lisbon.jpg')"
+        >
+          <h2>Lisbon, Portugal</h2>
+        </div>
+        <div
+          class="panel"
+          style="background-image: url('./assets/destinations/mayanmar.jpg')"
+        >
+          <h2>Bagan, Myanmar</h2>
+        </div>
+      </div>
+    </section>
+    <section class="info-section p4 flex-row">
+      <div class="info-text">
+        <h2>Welcome to our<br />seamless flight</h2>
+        <p>
+          booking platform! Discover a world of convenience and choice. Search
+          for flights, compare prices, and book your dream journey effortlessly.
+          Whether you're planning a business trip or a vacation, we've got you
+          covered
+        </p>
+      </div>
+      <img src="./assets/section-img.png" alt="" />
+    </section>
+    <section class="flights-table">
+      <h2>Current Flights</h2>
+      <div class="table">
+        <div class="table-row flex-row gap2 rounded center m-botom">
+          <div class="el">ID</div>
+          <div class="el">Air Plane</div>
+          <div class="el">Departure Date</div>
+          <div class="el">Arrival Date</div>
+          <div class="el">Status</div>
+        </div>
+        <div id="flightStatusContainer"></div>
+      </div>
+    </section>
+    <section class="footer-section">
+      <footer>
+        <div class="footer-container">
+          <p>&copy; 2024 FlightJet. All rights reserved.</p>
+          <a href="#">Contact Us</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <div class="social-icons">
+            <a href="#"><img src="./assets/Facebook.svg" alt="Facebook" /></a>
+            <a href="#"
+              ><img src="./assets/InstaLight.svg" alt="Instagram"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

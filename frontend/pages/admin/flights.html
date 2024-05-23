@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - Flights</title>
+    <link rel="stylesheet" href="../../styles/common/utilities.css" />
+    <link rel="stylesheet" href="../../styles/admin.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="main flex-row">
+      <section class="side-bar poppins-regular shadow">
+        <div class="title-element f-big p-top flex-row gap-5">
+          <img src="../../assets/logo.svg" alt="" class="logo-img" />
+          <div class="logo">Flight<br />Jet</div>
+        </div>
+        <div class="m-top2 flex-col gap2">
+          <div class="card gap2">
+            <a class="white flex-row gap2" href="../admin/dashboard.html">
+              <img src="../../assets/dashboard.svg" alt="" />
+              <div class="poppins-regular t-center flex-col j-center">
+                Dashboard
+              </div>
+            </a>
+          </div>
+          <div class="card gap2">
+            <a class="white flex-row gap2" href="../admin/flights.html">
+              <img src="../../assets/flight.svg" alt="" />
+              <div class="poppins-regular t-center flex-col j-center">
+                Flights
+              </div>
+            </a>
+          </div>
+          <div class="card gap2">
+            <a class="white flex-row gap2" href="../admin/bookings.html">
+              <img src="../../assets/bookings.svg" alt="" />
+              <div class="poppins-regular t-center flex-col j-center">
+                Bookings
+              </div>
+            </a>
+          </div>
+          <div class="card gap2">
+            <a class="white flex-row gap2" href="../admin/coinRequests.html">
+              <img src="../../assets/financial.svg" alt="" />
+              <div class="poppins-regular t-center flex-col j-center">
+                Financial
+              </div>
+            </a>
+          </div>
+          <div class="card gap2">
+            <a class="white flex-row gap2" href="../admin/feedback.html">
+              <img src="../../assets/feedback.svg" alt="" />
+              <div class="poppins-regular t-center flex-col j-center">
+                Feedback
+              </div>
+            </a>
+          </div>
+          <div class="card gap2">
+            <a class="white flex-row gap2" href="../admin/support.html">
+              <img src="../../assets/support.svg" alt="" />
+              <div class="poppins-regular t-center flex-col j-center">
+                Support
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="content w-100">
+        <nav>
+          <div class="name poppins-regular">Mohammad Ali Alaawar</div>
+        </nav>
+
+        <div class="table">
+          <div class="flex-row table-head">
+            <div class="title">Flights</div>
+            <div class="create">
+              <img
+                id="addFlightButton"
+                src="../../assets/plusIcon.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="table-row flex-row gap2 rounded center m-botom">
+            <div class="el">ID</div>
+            <div class="el">AirPlane</div>
+            <div class="el">Departure Date</div>
+            <div class="el">Arrival Date</div>
+            <div class="el">Status</div>
+            <div class="el">Action</div>
+          </div>
+          <div id="flightsData"></div>
+        </div>
+      </section>
+    </section>
+    <div class="pop-up" id="pop-up-createFlight">
+      <div class="popup-content">
+        <span class="close" id="close-flight">&times;</span>
+        <h2>Create Flight</h2>
+        <form id="addFlightForm">
+          <div class="form-group">
+            <label for="airline">Airline Name</label>
+            <select id="airline" name="airline" required></select>
+          </div>
+          <div class="form-group">
+            <label for="airplane">Airplane Name</label>
+            <select id="airplane" name="airplane" required></select>
+          </div>
+          <div class="form-group">
+            <label for="departureAirport">Departure Airport</label>
+            <input
+              type="text"
+              id="departureAirport"
+              name="departureAirport"
+              placeholder="enter the departure airport"
+            />
+          </div>
+          <div class="form-group">
+            <label for="arrivalAirport">Arrival Airport</label>
+            <input
+              type="text"
+              id="arrivalAirport"
+              name="arrivalAirport"
+              placeholder="enter the ariival Airport"
+            />
+          </div>
+          <div class="form-group">
+            <label for="departureDate">Departure Date</label>
+            <input
+              type="date"
+              id="departureDate"
+              name="departureDate"
+              placeholder="enter the departure date"
+            />
+          </div>
+          <div class="form-group">
+            <label for="arrivalDate">Arrival Date</label>
+            <input
+              type="date"
+              id="arrivalDate"
+              name="arrivalDate"
+              placeholder="enter the arrival date"
+            />
+          </div>
+          <div class="form-group">
+            <label for="departureTime">Departure Time</label>
+            <input
+              type="time"
+              id="departureTime"
+              name="departureTime"
+              placeholder="enter the departure time"
+            />
+          </div>
+          <div class="form-group">
+            <label for="arrivalTime">Arrival Time</label>
+            <input
+              type="time"
+              id="arrivalTime"
+              name="arrivalTime"
+              placeholder="enter the arrival time"
+            />
+          </div>
+          <div class="form-group">
+            <label for="basePrice">Base Price</label>
+            <input
+              type="text"
+              placeholder="enter the price"
+              name="basePrice"
+              id="basePrice"
+            />
+          </div>
+          <button type="submit">Create</button>
+        </form>
+      </div>
+    </div>
+    <div class="pop-up" id="pop-up-editeFlight">
+      <div class="popup-content">
+        <span class="close" id="close-Editflight">&times;</span>
+        <h2>Create Flight</h2>
+        <form id="editFlightForm">
+          <div class="form-group">
+            <label for="airline">Airline Name</label>
+            <select id="editAirline" name="airline" required></select>
+          </div>
+          <div class="form-group">
+            <label for="airplane">Airplane Name</label>
+            <select id="editAirplane" name="airplane" required></select>
+          </div>
+          <div class="form-group">
+            <label for="departureAirport">Departure Airport</label>
+            <input
+              type="text"
+              id="editDepartureAirport"
+              name="departureAirport"
+              placeholder="enter the departure airport"
+            />
+          </div>
+          <div class="form-group">
+            <label for="arrivalAirport">Arrival Airport</label>
+            <input
+              type="text"
+              id="editArrivalAirport"
+              name="arrivalAirport"
+              placeholder="enter the ariival Airport"
+            />
+          </div>
+          <div class="form-group">
+            <label for="departureDate">Departure Date</label>
+            <input
+              type="date"
+              id="editDepartureDate"
+              name="departureDate"
+              placeholder="enter the departure date"
+            />
+          </div>
+          <div class="form-group">
+            <label for="arrivalDate">Arrival Date</label>
+            <input
+              type="date"
+              id="editArrivalDate"
+              name="arrivalDate"
+              placeholder="enter the arrival date"
+            />
+          </div>
+          <div class="form-group">
+            <label for="departureTime">Departure Time</label>
+            <input
+              type="time"
+              id="editDepartureTime"
+              name="departureTime"
+              placeholder="enter the departure time"
+            />
+          </div>
+          <div class="form-group">
+            <label for="arrivalTime">Arrival Time</label>
+            <input
+              type="time"
+              id="editArrivalTime"
+              name="arrivalTime"
+              placeholder="enter the arrival time"
+            />
+          </div>
+          <div class="form-group">
+            <label for="flightStatus">Flight Status</label>
+            <select name="flightStatus" id="flightStatus">
+              <option value="0">Running</option>
+              <option value="1">Canceled</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="basePrice">Base Price</label>
+            <input
+              type="text"
+              placeholder="enter the price"
+              name="basePrice"
+              id="editBasePrice"
+            />
+          </div>
+          <button type="submit">Edit</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="../../scripts/admin/flights.js"></script>
+  </body>
+</html>

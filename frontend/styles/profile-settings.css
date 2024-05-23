@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Junge&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+.side-bar {
+  height: auto;
+  width: 350px;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+
+.m-top2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.card .home {
+  fill: white;
+  width: 20px;
+  height: 21px;
+}
+.profile {
+  margin-top: 10%;
+  padding-top: 20px;
+  background-color: white;
+  height: auto;
+  width: 60vw;
+  margin-left: 90px;
+  border-radius: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 60px;
+}
+
+.flex {
+  display: flex;
+}
+
+.box-1 {
+  width: 100%;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  padding-left: 13px;
+  height: 50px;
+}
+.box-1 input {
+  background-color: #d9d9d9;
+  border: none;
+}
+.box-1 input:focus {
+  outline: none;
+}
+.submit-btn {
+  height: auto;
+  margin-left: 20px;
+}
+.submit-btn button {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+.submit-btn:hover button {
+  cursor: pointer;
+}
+
+/* more styles to use */
+
+.grow-1 {
+  flex-grow: 1;
+}
+.grow-2 {
+  flex-grow: 2;
+}
+.wtd-50 {
+  width: 50%;
+}
+.wtd-90 {
+  width: 90%;
+}
+.wtd-100 {
+  width: 100%;
+}
+
+.txt-grey-24 {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  color: #a5a5a5;
+}
+.txt-black-24 {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+.txt-black-40 {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+
+.gap-50 {
+  gap: 30px;
+}
+.just-center {
+  display: flex;
+  align-items: center;
+}
+
+.mg-top-10 {
+  margin-top: 10%;
+}
+.mg-left-5 {
+  margin-left: 5%;
+}
+.a {
+  display: flex;
+  grid-area: 100px;
+}

@@ -1,0 +1,285 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f1efef;
+}
+a {
+  text-decoration: none;
+}
+.main {
+  height: 100vh;
+}
+
+.main .side-bar {
+  height: 100%;
+  width: 260px;
+  background-color: #f7f7f7;
+  color: white;
+}
+
+.card {
+  width: 250px;
+  height: 60px;
+  background-color: #191717;
+  display: flex;
+  padding-left: 30px;
+  flex-flow: row wrap;
+  border-radius: 0 7px 7px 0px;
+}
+.overview {
+  margin: 80px 80px auto 80px;
+}
+.overview .container {
+  display: flex;
+  justify-content: space-around;
+}
+.overview .container .box {
+  position: relative;
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  width: 320px;
+  height: 310px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.overview .container .box img {
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+}
+.overview .container .box h2 {
+  font-weight: bold;
+}
+.overview .container .box p {
+  color: rgba(0, 0, 0, 0.4);
+  text-transform: capitalize;
+}
+.overview .chart {
+  max-width: 95%;
+}
+.feedback {
+  margin-top: 80px;
+}
+.feedback .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+.feedback .container .review {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+}
+.feedback .container .review .info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.feedback .container .review .delete {
+  display: flex;
+  justify-content: flex-end;
+}
+.feedback .container .review .delete button {
+  border: none;
+  background-color: transparent;
+}
+.feedback .container .review .delete button:hover {
+  cursor: pointer;
+}
+.support {
+  margin-top: 80px;
+}
+.support .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+  gap: 20px;
+}
+.support .container .question-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+}
+.support .container .question-card p {
+  height: 75px;
+}
+.support .container .question-card .actions {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.support .container .actions button {
+  border: none;
+  background-color: transparent;
+}
+.support .container .actions button:hover {
+  cursor: pointer;
+}
+.support .container .actions img {
+  width: 20px;
+}
+.support .container .actions .reply {
+  background-color: #f7f7f7;
+  padding: 5px;
+  border-radius: 7px;
+}
+.support .container .actions .reply input {
+  border: none;
+  padding: 5px;
+  background-color: #f7f7f7;
+}
+
+.support .container .actions .reply input:focus {
+  outline: none;
+}
+.support .container .actions .reply img {
+  width: 20px;
+}
+.table {
+  width: 100%;
+}
+
+.table-head {
+  padding-left: 30px;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.table-row {
+  background-color: #4280b9;
+  width: 80%;
+  height: 100px;
+  display: flex;
+  margin: 30px;
+}
+
+.table-row .el {
+  font-size: 1.6rem;
+  font-weight: 700;
+  width: 30%;
+  color: #ffffff;
+  padding-left: 30px;
+  flex-grow: 1;
+}
+.create {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(29, 141, 9);
+  border-radius: 50%;
+  justify-content: center;
+}
+
+.create > img {
+  scale: 0.6;
+}
+.create > img:hover {
+  cursor: pointer;
+}
+.delete-flight,
+.edit-flight {
+  border: none;
+  background-color: transparent;
+}
+.delete-flight:hover,
+.edit-flight:hover {
+  cursor: pointer;
+}
+.delete-coin,
+.edit-coin {
+  border: none;
+  background-color: transparent;
+}
+.delete-coin:hover,
+.edit-coin:hover {
+  cursor: pointer;
+}
+.delete-booking,
+.edit-booking {
+  border: none;
+  background-color: transparent;
+}
+.delete-booking:hover,
+.edit-booking:hover {
+  cursor: pointer;
+}
+.pop-up {
+  position: absolute;
+  top: 130px;
+  left: 25%;
+  width: 50%;
+  height: 90%;
+  opacity: 0;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+@media (max-width: 768px) {
+  .pop-up {
+    width: 80%;
+    left: 17%;
+  }
+}
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  overflow-y: scroll;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+.show {
+  display: block;
+  opacity: 1;
+}

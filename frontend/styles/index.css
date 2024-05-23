@@ -1,0 +1,260 @@
+body {
+  font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+
+.user-header {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #121212;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-header .logo {
+  display: flex;
+  gap: 10px;
+  font-size: 1.6rem;
+  color: white;
+  flex: 0 0 35%;
+}
+
+.user-header nav {
+  flex-grow: 1;
+}
+
+.user-header .link-list {
+  display: flex;
+  justify-content: space-around;
+
+  list-style-type: none;
+  padding-right: 40px;
+}
+
+.user-header .link-list li a {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.hero {
+  height: 84.8vh;
+  width: auto;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+}
+
+.hero .info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.hero .hero-img {
+  scale: 0.6;
+  transform: translateY(-100px);
+}
+
+.hero .info .secondary-text {
+  font-size: 2.4rem;
+  color: white;
+  margin-bottom: 80px;
+  font-weight: 400;
+}
+
+.hero .info .primary-text {
+  font-size: 4rem;
+  color: white;
+  font-weight: 400;
+}
+
+.search-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  transform: translateY(-50px);
+}
+
+.search-card .search-form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0 30px;
+}
+
+.search-card .search-form .search-item {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 8px;
+  background-color: #d9d9d9;
+  border: none;
+}
+.search-card .search-form .search-item .destination {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #d9d9d9;
+  border: none;
+}
+.search-card .search-form .search-item .destination:focus {
+  outline: none;
+}
+
+.search-card .search-form button {
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+}
+.search-card .search-form button:hover {
+  cursor: pointer;
+}
+.search-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  margin-bottom: 50px;
+}
+
+.search-section > h2 {
+  padding-top: 30px;
+  font-size: 2.4rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.container-search {
+  margin: auto;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+
+.panel h2 {
+  font-size: 2.4rem;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h2 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out 0.4;
+}
+
+.icon {
+  max-width: 40px;
+}
+
+.info-section {
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+}
+
+.info-section .info-text h2 {
+  padding-top: 50px;
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+.info-section .info-text p {
+  padding-left: 40px;
+  padding-top: 30px;
+  font-size: 2rem;
+}
+
+/* table styling */
+.flights-table {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.flights-table h2 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+.table {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.table-head {
+  padding-left: 30px;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.table-row {
+  background-color: #4280b9;
+  width: 80%;
+  height: 100px;
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.table-row .el {
+  font-size: 1.6rem;
+  font-weight: 700;
+  width: 30%;
+  color: #ffffff;
+  padding-left: 30px;
+  flex-grow: 1;
+}

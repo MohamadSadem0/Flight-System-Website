@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Section</title>
+    <link rel="stylesheet" href="../../styles/contact.css" />
+    <link rel="stylesheet" href="../../styles/index.css" />
+    <link rel="stylesheet" href="../../styles/common/utilities.css" />
+  </head>
+  <body>
+    <header class="user-header">
+      <div class="logo p-left1">
+        <img src="../../assets/logo.svg" alt="" class="logo-img" />
+        <h2>Flight<br />Jet</h2>
+      </div>
+      <nav>
+        <ul class="link-list">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="./pages/user/booking.html">Book</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="../user/profile-settings.html">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="profile-container profile">
+      <section class="profile flex-col gap-20" id="chat-box">
+        <!-- <div class="chat-bubble user-bubble"></div> -->
+
+        <!-- <div class="chat-bubble admin-bubble"></div> -->
+      </section>
+      <section class="input-section">
+        <input type="text" id="user-input" placeholder="Type your message..." />
+        <button id="createMessage">Send</button>
+      </section>
+    </section>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="../../scripts/contact.js"></script>
+  </body>
+</html>
